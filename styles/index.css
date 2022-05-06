@@ -31,8 +31,8 @@ h1 {
 .advice-container {
   display: flex;
   flex-wrap: nowrap;
-  background-color: hsl(217, 19%, 38%);
-  width: 30%;
+  background-color: hsl(217, 19%, 24%);
+  width: 50%;
   height: 25rem;
   margin: 10rem auto;
   justify-content: center;
@@ -40,6 +40,14 @@ h1 {
   position: relative;
   border-radius: 2.5rem;
   text-align: center;
+}
+
+.svg {
+  padding: 1.5rem;
+}
+
+.hr_line {
+  fill: #4f5d74;
 }
 
 @media only screen and (max-width: 375px) {
