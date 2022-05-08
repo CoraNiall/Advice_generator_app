@@ -67,7 +67,7 @@ h1 {
   flex-wrap: wrap;
   background-color: hsl(217, 19%, 24%);
   width: 50%;
-  height: 25rem;
+  height: 20rem;
   margin: 10rem auto;
   justify-content: center;
   align-items: center;
@@ -85,8 +85,7 @@ h1 {
 }
 
 .svg_web {
-  height: 16px;
-  width: 444px;
+  width: 100%;
 }
 
 .svg_mobile {
