@@ -18,10 +18,22 @@ main {
   margin: 15rem 2.5rem;
 }
 
+.advice-header {
+  width: 80%;
+  position: relative;
+}
+
 h1 {
   color: hsl(150, 100%, 66%);
   font-size: 12px;
   text-transform: uppercase;
+}
+
+.dice-btn {
+  width: 80%;
+  position: absolute;
+  z-index: 1;
+  bottom: -1.6em;
 }
 
 .btn {
@@ -45,10 +57,14 @@ h1 {
 .quote {
   font-size: 28px;
   color: hsl(193, 38%, 86%);
+  width: 80%;
+  margin: auto;
 }
+
 .advice-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex: row;
+  flex-wrap: wrap;
   background-color: hsl(217, 19%, 24%);
   width: 50%;
   height: 25rem;
@@ -59,18 +75,62 @@ h1 {
   border-radius: 2.5rem;
   text-align: center;
   line-height: 1.6;
+  box-shadow: 5px 10px 18px #242424;
 }
 
 .svg {
-  padding: 1.5rem;
+  margin-bottom: 3rem;
+  width: 80%;
+  position: relative;
 }
 
-.hr_line {
+.svg_web {
+  height: 16px;
+  width: 444px;
+}
+
+.svg_mobile {
+  display: none;
+}
+
+.hr_line_web {
   fill: #4f5d74;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 1000px) {
   body {
     background-color: hsl(218, 23%, 16%);
+  }
+
+  .attribution {
+    color: white;
+  }
+  .attribution a {
+    color: white;
+  }
+
+  .quote {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .svg_web {
+    display: none;
+  }
+
+  .svg_mobile {
+    display: block;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .quote {
+    font-size: 18px;
+  }
+
+  .advice-container {
+    width: 95%;
+    margin: auto;
   }
 }
